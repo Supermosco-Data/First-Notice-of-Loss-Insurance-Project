@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+fastapi
+uvicorn
+requests
+streamlit
+#streamlit-autofresh
+matplotlib
+openai
+python-dotenv
+sqlalchemy
+seaborn
+mlflow
+joblib
+shap
+huggingface-hub
