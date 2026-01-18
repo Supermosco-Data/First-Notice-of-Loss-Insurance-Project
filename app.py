@@ -34,7 +34,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_claims_data():
-    return pd.read_csv(r"C:Data\claims_policy_merged_cleaned.csv")
+    return pd.read_csv("Data\claims_policy_merged_cleaned.csv")
 
 
 df_final = load_claims_data()

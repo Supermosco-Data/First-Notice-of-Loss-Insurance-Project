@@ -9,7 +9,7 @@ from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DATA_PATH = os.path.join(BASE_DIR, "Data", "claims_policy_merged_cleaned.csv")
+DATA_PATH = os.path.join(BASE_DIR, "Data\claims_policy_merged_cleaned.csv")
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 
 FEATURES = [
