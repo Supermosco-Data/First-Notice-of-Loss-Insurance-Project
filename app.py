@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 from overview import customer_overview
 from visualization import (
@@ -34,7 +35,9 @@ st.set_page_config(
 
 @st.cache_data
 def load_claims_data():
-    return pd.read_csv("Data\claims_policy_merged_cleaned.csv")
+    base_dir = os.path.dirname(__file__)
+    file_path = os.path.join(base_dir, "Data", "claims_policy_merged_cleaned.csv")
+    return pd.read_csv(file_path)
 
 
 df_final = load_claims_data()
